@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="AutifyTestSuite">
+    <test name="AutifyTest">
+        <groups>
+            <run>
+                <group name="smoke"/>
+                <group name="regression"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="Assignments.assignment">
+        		<classes>
+        		<class name="Assignments.assignment.AutifyTest4"/>
+            	<class name="Assignments.assignment.AutifyTest5"/>
+            	<class name="Assignments.assignment.InvoiceItem_Demo1"/>
+            	<class name="Assignments.assignment.RestCountriesApiTest8"/>
+            	<class name="Assignments.assignment.VerifyChildWindowTitle1"/>        
+        		</classes>
+        	</package>
+        </packages>
+    </test>
+</suite>

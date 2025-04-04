@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [AutifyTestSuite]" guice-stage="DEVELOPMENT" verbose="2">
+  <test thread-count="5" name="AutifyTest(failed)" verbose="2">
+    <groups>
+      <run>
+        <include name="smoke"/>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="Assignments.assignment.RestCountriesApiTest8">
+        <methods>
+          <include name="testInvalidCapital"/>
+          <include name="testValidCapital"/>
+        </methods>
+      </class> <!-- Assignments.assignment.RestCountriesApiTest8 -->
+      <class name="Assignments.assignment.AutifyTest5">
+        <methods>
+          <include name="testStartFreeTrialButtonAndSwitchWindow"/>
+          <include name="testVerifyErrorMessages"/>
+        </methods>
+      </class> <!-- Assignments.assignment.AutifyTest5 -->
+    </classes>
+  </test> <!-- AutifyTest(failed) -->
+</suite> <!-- Failed suite [AutifyTestSuite] -->
