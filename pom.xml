@@ -52,7 +52,7 @@
 <dependency>
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
-    <version>7.10.2</version>
+    <version>7.10.1</version>
     <scope>test</scope>
 </dependency>
 <!-- WebDriver Manager Dependency to manage ChromeDriver -->
@@ -117,18 +117,7 @@
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.6.1</version>
         </plugin>
-        <!-- Maven Compiler Plugin -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version>
-                <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                </configuration>
-            </plugin>
-
-            <!-- Maven Surefire Plugin for TestNG -->
+       <!-- Maven Surefire Plugin for TestNG -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -139,7 +128,6 @@
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
-
       </plugins>
     </pluginManagement>
   </build>

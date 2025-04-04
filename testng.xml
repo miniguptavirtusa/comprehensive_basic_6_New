@@ -1,24 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="AutifyTestSuite">
+<suite name="AutifyTestSuite" verbose="2">
     <test name="AutifyTest">
         <groups>
             <run>
-                <group name="smoke"/>
-                <group name="regression"/>
+                <include name="smoke"/>
+                <include name="regression"/>
             </run>
-        </groups>
-        <packages>
-            <package name="Assignments.assignment">
-        		<classes>
-        		<class name="Assignments.assignment.AutifyTest4"/>
-            	<class name="Assignments.assignment.AutifyTest5"/>
-            	<class name="Assignments.assignment.InvoiceItem_Demo1"/>
-            	<class name="Assignments.assignment.RestCountriesApiTest8"/>
-            	<class name="Assignments.assignment.VerifyChildWindowTitle3"/>        
-        		</classes>
-        	</package>
-        </packages>
+        </groups>           
+        <classes>
+        	<class name="Assignments.assignment.AutifyTest4">
+        		<methods>
+        			<include name="verifyErrorMessage"></include>	
+        		</methods>
+        	</class>
+        	<class name="Assignments.assignment.AutifyTest5">
+        		<methods>
+        			<include name="testStartFreeTrialButtonAndSwitchWindow"></include>
+        			<include name="testVerifyErrorMessages"></include>
+        		</methods>
+        	</class>
+            <class name="Assignments.assignment.InvoiceItem_Demo1"/>
+            <class name="Assignments.assignment.RestCountriesApiTest8">
+            	<methods>
+        			<include name="testValidCapital"></include>	
+        			<include name="testInvalidCapital"></include>	
+        		</methods>
+            </class>
+            <class name="Assignments.assignment.VerifyChildWindowTitle3">
+            	<methods>
+        			<include name="verifyAutifyTitle"></include>	
+        		</methods>
+            </class>   
+                
+        </classes>
     </test>
 </suite>
